@@ -1,0 +1,43 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  background-color: #f9f8f8;
+  position: relative;
+  &__content {
+  }
+  &__sticker {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000;
+    font-family: "PT-Mono", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+  }
+  &__text {
+    h1 {
+      font-family: "PT-Mono", sans-serif;
+      font-size: 46px;
+      line-height: 59px;
+      strong {
+        color: $red;
+      }
+    }
+    h4 {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+  &__img {
+    width: 880px;
+    position: absolute;
+    top: 0;
+    right: -200px;
+  }
+  &__fly1 {
+    position: absolute;
+  }
+  &__fly2 {
+    position: absolute;
+  }
+}

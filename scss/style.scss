@@ -6,7 +6,7 @@
 
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
-$max-width: 1200px; // Максимальная ширина контейнера
+$max-width: 1180px; // Максимальная ширина контейнера
 $gutter: 15px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
@@ -37,18 +37,30 @@ $break_xs: 500px;
 // ) !default;
 // $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 
-@import 'bootstrap/bootstrap'; // Подключение бутстрап
+// @import 'bootstrap/bootstrap'; // Подключение бутстрап
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("Pt-Mono", "../fonts/pt-mono/pt-mono-v8-latin_cyrillic-regular", normal, normal);
+
+@include font-face("PT-Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-regular", normal, normal);
+@include font-face("pt-sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-700", bold, normal);
+
+@include font-face("Ibm-Plex-Sans", "../fonts/ibm-plex-sans/ibm-plex-sans-v8-latin_cyrillic-regular", normal, normal);
+@include font-face("Ibm-Plex-Sans", "../fonts/ibm-plex-sans/ibm-plex-sans-v8-latin_cyrillic-600", 600, normal);
+
 
 // Цвета
-// $black: #000;
+$yellow: #FBBC02;
+$blue: #4284F3;
+$red: #EA4435;
+$green: #33A853;
 
 // Подключение файлов
 @import 'blocks/settings';
+@import 'blocks/header';
 @import 'hamburgers/hamburgers';
 @import 'blocks/menu';
+@import 'blocks/welcome';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';

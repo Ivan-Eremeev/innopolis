@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+  position: absolute;
+  z-index: 2;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+.logo {
+  max-width: 203px; 
+  max-height: 65px;
+  margin-left: 10px;
+}
