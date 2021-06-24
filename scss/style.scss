@@ -7,7 +7,7 @@
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
 $max-width: 1180px; // Максимальная ширина контейнера
-$gutter: 15px; // Расстояние между колонками
+$gutter: 20px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
@@ -15,7 +15,7 @@ $break_xl: 1400px;
 $break_lg: 1200px;
 $break_md: 1050px;
 $break_sm: 769px;
-$break_xs: 500px;
+$break_xs: 479px;
 
 // // Переменные для кастомизации Bootstrap 5
 // $grid-gutter-width: 15px; // Отступы между колонками
@@ -61,6 +61,7 @@ $green: #33A853;
 @import 'hamburgers/hamburgers';
 @import 'blocks/menu';
 @import 'blocks/welcome';
+@import 'blocks/welcome-item';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';

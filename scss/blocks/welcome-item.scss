@@ -1,0 +1,42 @@
+.welcome-item {
+  margin-top: -80px;
+  &__row {
+    display: flex;
+    margin-left: -40px;
+  }
+  &__item {
+    max-width: 240px;
+    margin-left: 40px;
+  }
+  &__icon {
+    width: 77px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-bottom: 23px;
+    flex-shrink: 0;
+  }
+  &__text {
+    line-height: 26px;
+  }
+  @media (max-width: $break_sm) {
+    margin-top: 0;
+    &__row {
+      display: block;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      max-width: none;
+      margin-bottom: 20px;
+    }
+    &__icon {
+      margin-bottom: 0;
+      margin-right: 36px;
+    }
+  }
+}

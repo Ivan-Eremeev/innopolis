@@ -74,13 +74,23 @@ body {
   font-family: "Ibm-Plex-Sans", sans-serif;
   font-size: 21px;
   font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 1.1px;
   color: #fff;
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
   border: none;
+  text-align: center;
   &:hover {
     background-color: #D8392C;
+  }
+  @media (max-width: $break_sm) {
+    font-size: 19px;
+  }
+  @media (max-width: $break_xs) {
+    padding: 12px;
+    font-size: 17px;
   }
 }
 /* /settings */

@@ -1,11 +1,19 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   padding: 16px 0;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: $break_sm) {
+    padding: 8px 0;
+    background-color: #fff;
+  }
 }
 .logo-wrapper {
   display: flex;
@@ -16,4 +24,8 @@
   max-width: 203px; 
   max-height: 65px;
   margin-left: 10px;
+  @media (max-width: $break_sm) {
+    max-width: 116px;
+    max-height: 35px;
+  }
 }

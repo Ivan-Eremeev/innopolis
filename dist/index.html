@@ -8,60 +8,122 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div class="wrapper">
+    
+  <div class="welcome-wrapper">
 
     <!-- header -->
     <header class="header">
+      <div class="wrapper">
 
-      <div class="logo-wrapper">
-        <a href="#" class="logo"><img src="img/logo-1.svg" alt=""></a>
-        <a href="#" class="logo"><img src="img/logo-2.svg" alt=""></a>
+        <div class="logo-wrapper">
+          <a href="#" class="logo">
+            <picture>
+              <source srcset="img/logo-1.svg" media="(min-width: 769px)">
+              <img src="img/logo-1-mob.svg" alt="">
+            </picture>
+          </a>
+          <a href="#" class="logo">
+            <picture>
+              <source srcset="img/logo-2.svg" media="(min-width: 769px)">
+              <img src="img/logo-2-mob.svg" alt="">
+            </picture>
+          </a>
+        </div>
+
+        <!-- menu -->
+        <div class="js-menu menu">
+          <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li>
+                <a class="active" href="#">Организаторы</a>
+              </li>
+              <li>
+                <a href="#">Программа</a>
+              </li>
+              <li>
+                <a href="#">Стоимость</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /menu -->
+
       </div>
-
-      <!-- menu -->
-      <div class="menu">
-        <nav class="menu__nav">
-          <ul class="menu__list">
-            <li>
-              <a href="#">Организаторы</a>
-            </li>
-            <li>
-              <a href="#">Программа</a>
-            </li>
-            <li>
-              <a href="#">Стоимость</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /menu -->
-
     </header>
     <!-- /header -->
 
     <!-- welcome -->
     <div class="welcome">
-      <div class="welcome__content">
-        <div class="welcome__sticker">Осталось 8 из 15 мест</div>
-        <div class="welcome__text">
-          <h1>Акселератор для бизнеса по запуску <strong>YouTube-каналов</strong></h1>
-          <h4>За 3 месяца вы создадите YouTube-канал, который поможет вашему бизнесу выйти на новый уровень.</h4>
+      <div class="wrapper">
+
+        <div class="welcome__content">
+          <div class="welcome__sticker">Осталось 8 из 15 мест</div>
+          <div class="welcome__text">
+            <h1>Акселератор <br>для бизнеса по запуску <strong>YouTube-каналов</strong></h1>
+            <h4>За 3 месяца вы создадите YouTube-канал, который поможет вашему бизнесу выйти на новый уровень.</h4>
+          </div>
+          <a href="#" class="btn">Программа акселератора</a>
         </div>
-        <a href="#" class="btn">Программа акселератора</a>
-      </div>
-      <div class="welcome__img">
-        <img src="img/welcome.png" alt="">
-        <img class="welcome__fly1" src="img/fly-1.svg" alt="">
-        <img class="welcome__fly2" src="img/fly-2.svg" alt="">
+        <div class="welcome__img">
+          <picture>
+            <source srcset="img/welcome.png" media="(min-width: 769px)">
+            <img src="img/welcome-mob.png" alt="">
+          </picture>
+          <!-- <img src="img/welcome.png" alt=""> -->
+          <img class="welcome__fly1" src="img/fly-1.svg" alt="">
+          <img class="welcome__fly2" src="img/fly-2.svg" alt="">
+        </div>
+
+        <img class="welcome__fly3" src="img/fly-3.svg"></img>
+
       </div>
     </div>
     <!-- /welcome -->
 
+    <!-- welcome-item -->
+    <div class="welcome-item">
+      <div class="wrapper">
+
+        <div class="welcome-item__row">
+          <div class="welcome-item__item">
+            <div class="welcome-item__icon">
+              <img src="img/monitor.svg" alt="">
+            </div>
+            <div class="welcome-item__text">Сделаем <span>канал с узнаваемым стилем</span>, крутыми обложками и оптимизацией.
+            </div>
+          </div>
+          <div class="welcome-item__item">
+            <div class="welcome-item__icon">
+              <img src="img/folder.svg" alt="">
+            </div>
+            <div class="welcome-item__text">Сделаем вместе <span>3 видео</span> —сценарий, режиссура, съемки, дизайн, постпродашн,
+              продвижение.</div>
+          </div>
+          <div class="welcome-item__item">
+            <div class="welcome-item__icon">
+              <img src="img/pazle.svg" alt="">
+            </div>
+            <div class="welcome-item__text">Вместе <span>протестируем гипотезу</span> и дадим методологию для дальнейшей работы
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- welcome-item -->
+
   </div>
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>

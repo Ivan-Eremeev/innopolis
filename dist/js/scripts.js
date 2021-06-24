@@ -31,6 +31,8 @@ $(document).ready(function () {
 	function myMenu(menu) {
 		if (menu.length) {
 			menu.each(function () {
+				console.log('trufffffffffffe');
+
 				var $this = $(this),
 						menuBtn = $this.find('#menu-btn'),
 						over = $this.find('#menu-over'),
@@ -41,12 +43,12 @@ $(document).ready(function () {
 				over.on('click', menuClose);
 				close.on('click', menuClose);
 				function menuOpen() { // Открывание меню
-					body.addClass('lock').css('padding-right', scrollbarWidth);
+					// body.addClass('lock').css('padding-right', scrollbarWidth);
 					$this.addClass('open');
 					menuBtn.addClass('is-active');
 				}
 				function menuClose() { // Закрывание меню
-					body.removeClass('lock').css('padding-right', 0);
+					// body.removeClass('lock').css('padding-right', 0);
 					$this.removeClass('open');
 					menuBtn.removeClass('is-active');
 				}
