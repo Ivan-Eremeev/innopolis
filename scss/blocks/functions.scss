@@ -1,0 +1,32 @@
+.functions {
+  margin-bottom: 130px;
+  &__head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 74px;
+    position: relative;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  &__text {
+    max-width: 850px;
+    text-align: center;
+  }
+  &__col {
+    @include col(4);
+    @include col-md(6);
+    @include col-sm(12);
+    margin-bottom: $gutter;
+  }
+  @media (max-width: $break_sm) {
+    margin-bottom: 22px;
+    padding-top: 22px;
+    &__head {
+      margin-bottom: 50px;
+    }
+    &__text {
+      text-align: left;
+    }
+  }
+}

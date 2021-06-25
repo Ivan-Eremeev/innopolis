@@ -9,116 +9,390 @@
 </head>
 <body>
     
-  <div class="welcome-wrapper">
+  <div class="hidden">
 
-    <!-- header -->
-    <header class="header">
-      <div class="wrapper">
-
-        <div class="logo-wrapper">
-          <a href="#" class="logo">
-            <picture>
-              <source srcset="img/logo-1.svg" media="(min-width: 769px)">
-              <img src="img/logo-1-mob.svg" alt="">
-            </picture>
-          </a>
-          <a href="#" class="logo">
-            <picture>
-              <source srcset="img/logo-2.svg" media="(min-width: 769px)">
-              <img src="img/logo-2-mob.svg" alt="">
-            </picture>
-          </a>
+    <div class="welcome-wrapper">
+    
+      <!-- header -->
+      <header class="header">
+        <div class="wrapper">
+    
+          <div class="logo-wrapper">
+            <a href="#" class="logo">
+              <picture>
+                <source srcset="img/logo-1.svg" media="(min-width: 769px)">
+                <img src="img/logo-1-mob.svg" alt="">
+              </picture>
+            </a>
+            <a href="#" class="logo">
+              <picture>
+                <source srcset="img/logo-2.svg" media="(min-width: 769px)">
+                <img src="img/logo-2-mob.svg" alt="">
+              </picture>
+            </a>
+          </div>
+    
+          <!-- menu -->
+          <div class="js-menu menu">
+            <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li>
+                  <a class="active" href="#">Организаторы</a>
+                </li>
+                <li>
+                  <a href="#">Программа</a>
+                </li>
+                <li>
+                  <a href="#">Стоимость</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /menu -->
+    
         </div>
-
-        <!-- menu -->
-        <div class="js-menu menu">
-          <div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+      </header>
+      <!-- /header -->
+    
+      <!-- welcome -->
+      <div class="welcome">
+        <div class="wrapper">
+    
+          <div class="welcome__content">
+            <div class="welcome__sticker">Осталось 8 из 15 мест</div>
+            <div class="welcome__text">
+              <h1>Акселератор <br>для бизнеса по запуску <strong>YouTube-каналов</strong></h1>
+              <h4>За 3 месяца вы создадите YouTube-канал, который поможет вашему бизнесу выйти на новый уровень.</h4>
+            </div>
+            <a href="#" class="btn">Программа акселератора</a>
+          </div>
+          <div class="welcome__img">
+            <picture>
+              <source srcset="img/welcome.png" media="(min-width: 769px)">
+              <img src="img/welcome-mob.png" alt="">
+            </picture>
+            <!-- <img src="img/welcome.png" alt=""> -->
+            <img class="welcome__fly1" src="img/fly-1.svg" alt="">
+            <img class="welcome__fly2" src="img/fly-2.svg" alt="">
+          </div>
+    
+          <img class="welcome__fly3" src="img/fly-3.svg"></img>
+    
+        </div>
+      </div>
+      <!-- /welcome -->
+    
+      <!-- welcome-item -->
+      <div class="welcome-item">
+        <div class="wrapper">
+    
+          <div class="welcome-item__row">
+            <div class="welcome-item__item">
+              <div class="welcome-item__icon">
+                <img src="img/monitor.svg" alt="">
+              </div>
+              <div class="welcome-item__text">Сделаем <span>канал с узнаваемым стилем</span>, крутыми обложками
+                и оптимизацией.
+              </div>
+            </div>
+            <div class="welcome-item__item">
+              <div class="welcome-item__icon">
+                <img src="img/folder.svg" alt="">
+              </div>
+              <div class="welcome-item__text">Сделаем вместе <span>3 видео</span> —сценарий, режиссура, съемки, дизайн,
+                постпродашн,
+                продвижение.</div>
+            </div>
+            <div class="welcome-item__item">
+              <div class="welcome-item__icon">
+                <img src="img/pazle.svg" alt="">
+              </div>
+              <div class="welcome-item__text">Вместе <span>протестируем гипотезу</span> и дадим методологию для дальнейшей
+                работы
+              </div>
             </div>
           </div>
-          <nav class="menu__nav">
-            <ul class="menu__list">
-              <li>
-                <a class="active" href="#">Организаторы</a>
-              </li>
-              <li>
-                <a href="#">Программа</a>
-              </li>
-              <li>
-                <a href="#">Стоимость</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+    
         </div>
-        <!-- /menu -->
-
       </div>
-    </header>
-    <!-- /header -->
+      <!-- welcome-item -->
+    
+    </div>
+    
+    <!-- functions -->
+    <div class="functions">
+      <div class="wrapper">
+    
+        <div class="functions__head">
+          <div class="functions__text">
+            <h2>Зачем нужен YouTube акселератор?</h2>
+            <h4>Если коротко — чтобы достичь новых вершин в бизнесе с помощью YouTube. И решать
+              поступающие проблемы с помощью
+              еженедельного трекинга с нашими менторами.</h4>
+          </div>
+          <div class="title-fly">
+            <img src="img/fly-4.svg" alt="">
+          </div>
+        </div>
+    
+        <div class="row">
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/note.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Вывести свой бизнес на новый уровень</strong></h4>
+                <p>Трафик с каждым годом становится дороже, а сарафанное радио не приносит столько клиентов. С помощью
+                  YouTube вы сможете
+                  сделать бизнесу 2х или 10х за счет поисковой индексации и лояльности целевой аудитории.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/funnel.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Заработать больше</strong></h4>
+                <p>Привлечете больше новых клиентов с помощью правильно структурированных видео и использования алгоритмов
+                  продвижения
+                  YouTube.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/megafon.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Говорить с аудиторией на одном языке</strong></h4>
+                <p>Научитесь проводить анализ запросов вашей целевой аудитории и конкурентов и писать именно те сценарии к
+                  видео, которые
+                  принесут вашему бизнесу максимум пользы.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/monitor-2.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Видеть нарастающие тренды</strong></h4>
+                <p>Освоите инструменты, которые позволят вовремя заметить нарастающие тренды и скорректировать свой
+                  контент-план.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/settings.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Быстро и с удовольствием делать контент</strong></h4>
+                <p>Станете системно производить интересные видео высокого качества с завлекающими обложками без космических
+                  бюджетов.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/rocket.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Относиться к блогу как к стартапу</strong></h4>
+                <p>Научитесь отслеживать нужные метрики блога и ставить KPI для сотрудников.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/planet.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Выйти на новые рынки</strong></h4>
+                <p>Построите общение с новой аудиторией через YouTube. Ведение блога на YouTube — один из самых доступных
+                  способов
+                  рассказать о себе на рынках с высокой конкуренцией.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+          <div class="functions__col">
+            <!-- card -->
+            <div class="card">
+              <div class="card__icon">
+                <img src="img/diagram.svg" alt="">
+              </div>
+              <div class="card__text">
+                <h4><strong>Стать более узнаваемым</strong></h4>
+                <p>Вы начнете продвигать свой канал платными и бесплатными способами. У вас будут все инструменты,
+                  чтобы самостоятельно
+                  настраивать рекламные кампании или контролировать подрядчиков.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+    
+        </div>
+    
+      </div>
+    </div>
+    <!-- /functions -->
+    
+    <!-- video -->
+    <div class="video">
+      <div class="wrapper">
+    
+        <div class="video__head">
+          <div class="video__text">
+            <h3 style="text-align:center">Рассказываем о том, как бизнесу оформить канал на youtube в нашем саммари</h3>
+          </div>
+          <div class="video__fly1">
+            <img src="img/fly-6.svg" alt="">
+          </div>
+          <div class="video__fly2">
+            <img src="img/fly-6.svg" alt="">
+          </div>
+        </div>
+    
+        <div class="video__iframe img-responsive">
+          <iframe src="https://www.youtube.com/embed/MIfo8EVlmoQ" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+    
+        <div class="video__circle">
+          <img src="img/circle-1.png" alt="">
+        </div>
+    
+        <div class="video__fly3">
+          <img src="img/fly-5.svg" alt="">
+        </div>
+    
+      </div>
+    </div>
+    <!-- /video -->
 
-    <!-- welcome -->
-    <div class="welcome">
+    <!-- advantages -->
+    <div class="advantages">
       <div class="wrapper">
 
-        <div class="welcome__content">
-          <div class="welcome__sticker">Осталось 8 из 15 мест</div>
-          <div class="welcome__text">
-            <h1>Акселератор <br>для бизнеса по запуску <strong>YouTube-каналов</strong></h1>
-            <h4>За 3 месяца вы создадите YouTube-канал, который поможет вашему бизнесу выйти на новый уровень.</h4>
-          </div>
-          <a href="#" class="btn">Программа акселератора</a>
-        </div>
-        <div class="welcome__img">
-          <picture>
-            <source srcset="img/welcome.png" media="(min-width: 769px)">
-            <img src="img/welcome-mob.png" alt="">
-          </picture>
-          <!-- <img src="img/welcome.png" alt=""> -->
-          <img class="welcome__fly1" src="img/fly-1.svg" alt="">
-          <img class="welcome__fly2" src="img/fly-2.svg" alt="">
+        <div class="advantages__text">
+          <h3>Почему YouTube сегодня — это отличный инструмент для продвижения бизнеса?</h3>
         </div>
 
-        <img class="welcome__fly3" src="img/fly-3.svg"></img>
+        <div class="row">
+        
+          <div class="advantages__col">
+            <div class="advantages__head advantages__head--red">
+              <span class="advantages__ralative">2+ млрд.
+                <span class="advantages__head-fly">
+                  <img src="img/fly-10.svg" alt="">
+                </span>
+              </span>
+            </div>
+            <div class="advantages__content">Активных пользователей в месяц <br>и это почти треть всех пользователей <br>интернета</div>
+          </div>
+        
+          <div class="advantages__col">
+            <div class="advantages__head advantages__head--blue">
+              <span class="advantages__ralative">2 место
+                <span class="advantages__head-fly">
+                  <img src="img/fly-11.svg" alt="">
+                </span>
+              </span>
+            </div>
+            <div class="advantages__content">По популярности среди поисковых площадок <br>в мире. YouTube третий в России после <br>Google и Yandex</div>
+          </div>
+        
+          <div class="advantages__col">
+            <div class="advantages__head advantages__head--green">
+              <span class="advantages__ralative">18-34 лет
+                <span class="advantages__head-fly">
+                  <img src="img/fly-12.svg" alt="">
+                </span>
+              </span>
+            </div>
+            <div class="advantages__content">Средний возраст аудитории YouTube. <br>При этом мужчин больше, чем женщин.</div>
+          </div>
+        
+        </div>
+        
+        <div class="advantages__circle">
+          <img src="img/circle-2.png" alt="">
+        </div>
+        
+        <div class="advantages__fly">
+          <img src="img/fly-7.svg" alt="">
+        </div>
 
       </div>
     </div>
-    <!-- /welcome -->
+    <!-- /advantages -->
 
-    <!-- welcome-item -->
-    <div class="welcome-item">
+    <!-- diagram -->
+    <div class="diagram">
       <div class="wrapper">
 
-        <div class="welcome-item__row">
-          <div class="welcome-item__item">
-            <div class="welcome-item__icon">
-              <img src="img/monitor.svg" alt="">
-            </div>
-            <div class="welcome-item__text">Сделаем <span>канал с узнаваемым стилем</span>, крутыми обложками и оптимизацией.
-            </div>
+        <div class="diagram__head">
+          <div class="diagram__text">
+            <h3>YouTube позволяет отстраивать воронку продаж на всех этапах работы с клиентами по модели AIDA</h3>
           </div>
-          <div class="welcome-item__item">
-            <div class="welcome-item__icon">
-              <img src="img/folder.svg" alt="">
-            </div>
-            <div class="welcome-item__text">Сделаем вместе <span>3 видео</span> —сценарий, режиссура, съемки, дизайн, постпродашн,
-              продвижение.</div>
+          <div class="title-fly">
+            <img src="img/fly-8.svg" alt="">
           </div>
-          <div class="welcome-item__item">
-            <div class="welcome-item__icon">
-              <img src="img/pazle.svg" alt="">
-            </div>
-            <div class="welcome-item__text">Вместе <span>протестируем гипотезу</span> и дадим методологию для дальнейшей работы
-            </div>
-          </div>
+        </div>
+
+        <div class="diagram__img">
+          <img src="img/diagram.jpg" alt="">
+        </div>
+
+        <div class="diagram__fly">
+          <img src="img/fly-9.svg" alt="">
+        </div>
+        <div class="diagram__circle">
+          <img src="img/circle-3.png" alt="">
         </div>
 
       </div>
     </div>
-    <!-- welcome-item -->
+    <!-- /diagram -->
 
   </div>
 

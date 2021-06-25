@@ -16,6 +16,7 @@ body {
   background-color: #fff;
   font-family: "PT-Sans";
   font-size: 17px;
+  line-height: 27px;
   &.lock {
     position: fixed;
   }
@@ -91,6 +92,59 @@ body {
   @media (max-width: $break_xs) {
     padding: 12px;
     font-size: 17px;
+  }
+}
+h1 {
+  font-family: "PT-Mono";
+  font-size: 46px;
+  line-height: 59px;
+  @media (max-width: $break_sm) {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+h2 {
+  font-family: "PT-Mono";
+  font-size: 42px;
+  line-height: 57px;
+  @media (max-width: $break_sm) {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+h3 {
+  font-family: "PT-Mono";
+  font-size: 30px;
+  line-height: 47px;
+  font-weight: normal;
+  @media (max-width: $break_sm) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+h4 {
+  font-family: "PT-Sans", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 38px;
+  @media (max-width: $break_sm) {
+    font-size: 20px;
+    line-height: 31px;
+  }
+}
+.hidden {
+  overflow: hidden;
+}
+.title-fly {
+  position: absolute;
+  top: -92px;
+  left: 50%;
+  transform: translate(-50%,0);
+  @media (max-width: $break_sm) {
+    width: 37px;
+    left: 0;
+    top: -50px;
+    transform: translate(0,0);
   }
 }
 /* /settings */
