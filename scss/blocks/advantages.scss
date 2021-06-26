@@ -12,6 +12,7 @@
   }
   &__col {
     @include col(4);
+    @include col-md(6);
     @include col-sm(12);
   }
   &__head {

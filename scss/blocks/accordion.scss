@@ -32,7 +32,7 @@
     padding: 10px 0 10px 80px;
   }
   &__alert {
-    padding: 35px;
+    padding: 35px 10px;
     background-color: #373737;
     border-top: 2px solid #fff;
     font-weight: bold;
@@ -54,6 +54,7 @@
     flex-shrink: 0;
     h3 {
     line-height: 0.8;
+    font-weight: bold;
     }
   }
   &__text {
@@ -118,6 +119,54 @@
     margin-bottom: 10px;
   }
   &__subtext {
+  }
+  @media (max-width: $break_sm) {
+    border-bottom: none;
+    &__trigger {
+      display: block;
+      padding: 22px 38px 22px 0;
+    }
+    &__name {
+      width: 100%;   
+      margin-bottom: 22px;
+    }
+    &__title {
+      width: 100%;
+      margin-bottom: 3px;
+      h3 {
+        font-size: 30px;
+        line-height: 47px;
+      }   
+    }
+    &__text {
+      max-width: none;
+    }
+    &__close {
+      width: 34px;
+      height: 34px;
+      top: 12px;
+      &:after, &:before {
+        width: 55%;
+      }
+    }
+    &__flex {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+    &__card {
+      padding: 132px 34px 34px 20px;
+    }
+    &__img {
+      max-width: 150px;
+      max-height: 130px;
+      object-fit: cover;
+      transform: translate(0,0);
+      left: 20px;
+      top: -25px;
+    }
+    &__card-content {
+      padding-left: 14px;
+    }
   }
 }
 

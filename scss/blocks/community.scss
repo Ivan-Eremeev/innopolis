@@ -3,8 +3,10 @@
   position: relative;
   .wrapper {
     display: flex;
+    align-items: flex-start;
   }
   &__img {
+    max-width: 600px;
     flex-shrink: 0;
     margin-left: -50px;
     margin-right: 50px;
@@ -50,5 +52,32 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  @media (max-width: $break_md) {
+    &__img {
+      max-width: 500px;
+      margin-left: -150px;
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 125px;
+    .wrapper {
+      flex-wrap: wrap;
+    }
+    &:before {
+      height: 40px;
+    }
+    &__img {
+      display: none;
+    }
+    &__content {
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &__item {
+      margin-bottom: 50px;
+    }
   }
 }

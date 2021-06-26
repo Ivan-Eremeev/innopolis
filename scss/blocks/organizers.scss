@@ -5,6 +5,7 @@
   position: relative;
   &__title {
     text-align: center;
+    position: relative;
   }
   &__row {
     display: flex;
@@ -78,5 +79,63 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  @media (max-width: $break_md) {
+    &__img {
+      max-width: 600px;
+      &--right {
+        margin-right: -250px;
+      }
+      &--left {
+        margin-left: -250px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 165px;
+    &:before {
+      height: 40px;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__row {
+      flex-wrap: wrap;
+      &--mt {
+        margin-top: 0;
+        .organizers__img {
+          order: 2;
+        }
+        .organizers__content {
+          order: 1;
+        }
+      }
+    }
+    &__content {
+      padding-top: 18px;
+      padding-bottom: 0;
+    }
+    &__text {
+      h3 {
+        margin-bottom: 12px;
+      }
+      &--green {
+        h3 {
+          font-size: 30px;
+          line-height: 47px;
+        }
+      }
+    }
+    &__img {
+      max-width: 830px;
+      &--right {
+        margin-top: -35px;
+        margin-right: 0;
+        margin-left: -100px;
+      }
+      &--left {
+        margin-left: -133px;
+      }
+    }
   }
 }

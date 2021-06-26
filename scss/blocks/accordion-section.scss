@@ -30,4 +30,21 @@
     top: 0;
     left: 0;
   }
+  @media (max-width: $break_sm) {
+    padding-top: 122px;
+    padding-bottom: 20px;
+    &:before {
+      height: 40px;
+    }
+    &__head {
+      display: block;
+      padding-bottom: 85px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      h4 {
+        max-width: none;
+      }
+    }
+  }
 }
