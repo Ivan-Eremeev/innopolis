@@ -31,7 +31,6 @@ $(document).ready(function () {
 	function myMenu(menu) {
 		if (menu.length) {
 			menu.each(function () {
-				console.log('trufffffffffffe');
 
 				var $this = $(this),
 						menuBtn = $this.find('#menu-btn'),
@@ -145,56 +144,38 @@ $(document).ready(function () {
 	// }
 	// tabs($('.js-tabs'));
 
-	// // Аккордеон
-	// function accordeon(accordeon, mobile) {
-	// 	var trigger = accordeon.find('.accordeon_trigger'),
-	// 			content = accordeon.find('.accordeon_content'),
-	// 			time = 300;
-	// 	if (!mobile) {
-	// 		mobile = false;
-	// 	};
-	// 	function contentDisplayNone() {
-	// 		if (mobile == true && $(window).width() < breakMd) {
-	// 			content.css({
-	// 				display: 'none'
-	// 			});
-	// 		}
-	// 		if (mobile == false) {
-	// 			content.css({
-	// 				display: 'none'
-	// 			});
-	// 		}
-	// 	};
-	// 	contentDisplayNone();
-	// 	$(window).resize(function() {
-	// 		contentDisplayNone();
-	// 	});
-	// 	trigger.on('click', function() {
-	// 		$this = $(this);
-	// 		if (mobile == true && $(window).width() < breakMd) {
-	// 			if (!$this.hasClass('active')) {
-	// 				trigger.removeClass('active');
-	// 				$this.addClass('active');
-	// 				content.stop().slideUp(time);
-	// 				$this.next('.accordeon_content').stop().slideDown(time).removeClass('hide');
-	// 			}else {
-	// 				$this.removeClass('active');
-	// 				$this.next('.accordeon_content').stop().slideUp(time).addClass('hide');
-	// 			}
-	// 		}
-	// 	});
-	// 	$(window).resize(function() {
-	// 		if (mobile == true && $(window).width() > breakMd) {
-	// 			trigger.removeClass('active');
-	// 			content.removeClass('hide')
-	// 				.attr('style', '');
-	// 		}
-	// 		else {
-	// 			content.addClass('hide')
-	// 		}
-	// 	});
-	// };
-	// accordeon();
+	// Аккордеон
+	function accordion() {
+		if ($('.accordion').length) {
+			$('.accordion').each(function () {
+				var accordion = $(this),
+					trigger = accordion.find('.accordion__trigger'),
+					time = 300;
+				trigger.on('click', function () {
+					var $thisTrigger = $(this),
+						data = $thisTrigger.data('trigger');
+					if (!$thisTrigger.hasClass('active')) {
+						$thisTrigger.addClass('active');
+						accordion.find('#' + data).stop().slideDown(
+							time,
+							function () {
+								$(this).addClass('open')
+							}
+						);
+					} else {
+						$thisTrigger.removeClass('active');
+						accordion.find('#' + data).stop().slideUp(
+							time,
+							function () {
+								$(this).removeClass('open')
+							}
+						);
+					}
+				})
+			})
+		}
+	}
+	accordion();
 
 	// // Модальное окно
 	// function modal(modal) {

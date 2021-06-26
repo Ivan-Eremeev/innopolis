@@ -141,7 +141,14 @@ if (gulpVersion == '3') {
       browserSync.reload();
       done();
     });
-    gulp.watch(jsAppPath + '/**/*.js', ['js']);
+    if (jsOn) {
+      gulp.watch(jsAppPath + '/**/*.js', ['js']);
+    } else {
+      gulp.watch(jsPath + '/**/*.js', function reload(done) {
+        browserSync.reload();
+        done();
+      });
+    }
     gulp.watch(scssPath + '/**/*.scss', ['style']);
     gulp.watch(lessPath + '/**/*.less', ['style']);
   });
@@ -159,7 +166,14 @@ else if (gulpVersion == '4') {
       browserSync.reload();
       done();
     });
-    gulp.watch(jsAppPath + '/**/*.js', gulp.parallel('js'));
+    if (jsOn) {
+      gulp.watch(jsAppPath + '/**/*.js', gulp.parallel('js'));
+    }else {
+      gulp.watch(jsPath + '/**/*.js', function reload(done) {
+        browserSync.reload();
+        done();
+      });
+    }
     gulp.watch(scssPath + '/**/*.scss', gulp.parallel('style'));
     gulp.watch(lessPath + '/**/*.less', gulp.parallel('style'));
   });

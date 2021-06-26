@@ -1,5 +1,6 @@
 .diagram {
   padding-top: 286px;
+  padding-bottom: 130px;
   background-color: #f2f2f2;
   position: relative;
   &__head {
@@ -33,7 +34,7 @@
     display: block;
     width: 100%;
     height: 200px;
-    background: linear-gradient(to top left, #f2f2f2 50%, #fff 50%);
+    background: linear-gradient(to top left, #f2f2f2 50%, #fff 51%);
     position: absolute;
     top: 0;
     left: 0;

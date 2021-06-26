@@ -1,0 +1,54 @@
+.community {
+  padding-top: 318px;
+  position: relative;
+  .wrapper {
+    display: flex;
+  }
+  &__img {
+    flex-shrink: 0;
+    margin-left: -50px;
+    margin-right: 50px;
+    position: relative;
+  }
+  &__fly1 {
+    position: absolute;
+    top: -23px;
+    right: 118px;
+  }
+  &__fly2 {
+    position: absolute;
+    bottom: 56px;
+    right: 9px;
+  }
+  &__content {
+    h2 {
+      margin-bottom: 25px;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__icon {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+  &__text {
+    h3 {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom right, #222 50%, #fff 51%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
