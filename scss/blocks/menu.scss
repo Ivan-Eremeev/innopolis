@@ -63,10 +63,12 @@
 		}
 		&__list {
 			display: block;
+			text-align: center;
 			li {
-
+				
 			}
 			a {
+				display: inline-block;
 				margin: 0;
 			}
 		}

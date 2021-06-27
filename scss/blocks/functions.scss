@@ -1,5 +1,7 @@
 .functions {
-  margin-bottom: 130px;
+  padding-top: 269px;
+  padding-bottom: 240px;
+  position: relative;
   &__head {
     display: flex;
     justify-content: center;
@@ -19,14 +21,28 @@
     @include col-sm(12);
     margin-bottom: $gutter;
   }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+  }
   @media (max-width: $break_sm) {
-    margin-bottom: 22px;
-    padding-top: 22px;
+    padding-top: 135px;
+    padding-bottom: 48px;
     &__head {
       margin-bottom: 50px;
     }
     &__text {
       text-align: left;
+    }
+    &:before {
+      transform: skewY(-4deg);
     }
   }
 }

@@ -177,6 +177,33 @@ $(document).ready(function () {
 	}
 	accordion();
 
+	// Scrollspy
+	$('body').each(function () {
+	  var $spy = $(this).scrollspy('refresh')
+	});
+
+	// Massonry
+	$('.gallery__images').masonry({
+		// options
+		itemSelector: '.gallery__img',
+		columnWidth: '.grid-sizer',
+		percentPosition: true,
+	});
+
+	// Magnific Popup
+	$('.gallery__img').magnificPopup({
+		type: 'image',
+		mainClass: 'mfp-with-zoom',
+		zoom: {
+			enabled: true,
+			duration: 300,
+			easing: 'ease-in-out',
+			opener: function (openerElement) {
+				return openerElement.is('img') ? openerElement : openerElement.find('img');
+			}
+		}
+	});
+
 	// // Модальное окно
 	// function modal(modal) {
 	// 	$('.modal-trigger').on('click', function() {

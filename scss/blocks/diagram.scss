@@ -1,7 +1,7 @@
 .diagram {
-  padding-top: 286px;
-  padding-bottom: 130px;
-  background-color: #f2f2f2;
+  padding-top: 176px;
+  padding-bottom: 240px;
+  // background-color: #f2f2f2;
   position: relative;
   &__head {
     display: flex;
@@ -29,22 +29,32 @@
     top: -390px;
     right: -115px
   }
+  // &:before {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 200px;
+  //   background: linear-gradient(to top left, #f2f2f2 50%, #fff 51%);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
   &:before {
     content: '';
     display: block;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to top left, #f2f2f2 50%, #fff 51%);
     position: absolute;
+    background-color: #f2f2f2;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
+    transform: skewY(-10deg);
   }
   @media (max-width: $break_sm) {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 127px;
+    padding-bottom: 70px;
     &:before {
-      height: 40px;
-      top: 0;
+      transform: skewY(-4deg);
     }
     &__text {
       text-align: left;
