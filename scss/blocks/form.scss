@@ -56,4 +56,13 @@
       padding: 22px 30px;
     }
   }
+  @media (max-width: $break_xs) {
+    &__footer {
+      flex-wrap: wrap;
+      .btn {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

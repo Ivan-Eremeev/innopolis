@@ -1098,7 +1098,7 @@ h4 {
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
     .accordion__trigger--faq {
-      padding: 37px 26px; }
+      padding: 37px 55px 37px 26px; }
   .accordion__content {
     display: none; }
     .accordion__content--faq {
@@ -1905,6 +1905,13 @@ h4 {
         line-height: 47px; }
       .form .btn {
         padding: 22px 30px; } }
+  @media (max-width: 479px) {
+    .form__footer {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .form__footer .btn {
+        width: 100%;
+        margin-bottom: 10px; } }
 
 .gallery {
   padding-top: 244px;
