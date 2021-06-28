@@ -17,28 +17,6 @@ $break_md: 1050px;
 $break_sm: 769px;
 $break_xs: 479px;
 
-// // Переменные для кастомизации Bootstrap 5
-// $grid-gutter-width: 15px; // Отступы между колонками
-// $grid-columns: 12; // Колличество колонок
-// $grid-breakpoints: ( // Брейкпоинты
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1400px
-// ) !default;
-// $container-max-widths: ( // Максимальная ширина контейнера
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px,
-//   xxl: 1320px
-// ) !default;
-// $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
-
-// @import 'bootstrap/bootstrap'; // Подключение бутстрап
-
 // Шрифты
 @include font-face("Pt-Mono", "../fonts/pt-mono/ptmonobold", bold, normal);
 @include font-face("Pt-Mono", "../fonts/pt-mono/pt-mono-v8-latin_cyrillic-regular", normal, normal);
@@ -80,6 +58,3 @@ $green: #33A853;
 @import 'blocks/gallery';
 @import 'blocks/faq';
 @import 'blocks/footer';
-// @import 'blocks/modal';
-// @import 'blocks/tooltipster-noir';
-// @import 'blocks/tabs';
