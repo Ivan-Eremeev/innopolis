@@ -1,0 +1,33 @@
+.faq {
+  padding-top: 56px;
+  padding-bottom: 125px;
+  .wrapper {
+    display: flex;
+  }
+  &__title {
+    width: 34%;
+  }
+  &__fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__accordion {
+    width: 66%;
+  }
+  @media (max-width: $break_sm) {
+    .wrapper {
+      flex-wrap: wrap;
+    }
+    &__title {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__accordion {
+      width: 100%;
+    }
+    &__fly {
+      top: -43px;
+    }
+  }
+}

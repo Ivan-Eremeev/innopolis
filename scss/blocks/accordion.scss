@@ -1,7 +1,13 @@
 .accordion {
   border-bottom: 2px solid #fff;
+  &--faq {
+    border-color: #000;
+  }
   &__item {
     border-top: 2px solid #fff;
+    &--faq {
+      border-color: #000;
+    }
   }
   &__trigger {
     display: flex;
@@ -21,9 +27,15 @@
         }
       }
     }
+    &--faq {
+      padding: 37px 26px;
+    }
   }
   &__content {
     display: none;
+    &--faq {
+      padding: 0 26px 62px;
+    }
   }
   &__flex {
     display: flex;
@@ -55,6 +67,12 @@
     h3 {
     line-height: 0.8;
     font-weight: bold;
+    }
+    h4 {
+      font-weight: bold;
+    }
+    &--wf {
+      width: 100%;
     }
   }
   &__text {
@@ -125,6 +143,9 @@
     &__trigger {
       display: block;
       padding: 22px 38px 22px 0;
+      &--faq {
+        padding: 29px 60px 29px 14px;
+      }
     }
     &__name {
       width: 100%;   
@@ -137,6 +158,12 @@
         font-size: 30px;
         line-height: 47px;
       }   
+    }
+    &__content {
+
+      &--faq {
+        padding: 0 13px 62px;
+      }
     }
     &__text {
       max-width: none;

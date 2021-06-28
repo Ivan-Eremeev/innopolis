@@ -3,6 +3,8 @@
   padding:  68px 80px;
   background-color: #fff;
   color: #000;
+  position: relative;
+  z-index: 2;
   &__title {
     margin-bottom: 17px;
     position: relative;
@@ -40,5 +42,18 @@
     padding-left: 10px;
     font-size: 13px;
     line-height: 19px;
+  }
+  @media (max-width: $break_sm) {
+    padding: 48px 30px 56px;
+    margin-bottom: 97px;
+    &__title {
+      h3 {
+        font-size: 30px;
+        line-height: 47px;
+      }
+    }
+    .btn {
+      padding: 22px 30px;
+    }
   }
 }

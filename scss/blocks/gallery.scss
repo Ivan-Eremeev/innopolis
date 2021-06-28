@@ -58,7 +58,40 @@
     right: 0;
     transform: skewY(-10deg);
   }
+  @media (max-width: $break_sm) {
+    padding-top: 118px;
+    padding-bottom: 50px;
+    &:before {
+    transform: skewY(-4deg);
+    }
+    &__text {
+      text-align: left;
+    }
+    .title-fly {
+      left: 20px;
+    }
+    &__img {
+      width: 50%;
+    }
+    &__head {
+      margin-bottom: 33px;
+    }
+    &__triangle {
+      width: 80px;      
+      bottom: -29px;
+      right: -40px;
+    }
+    &__fly1 {
+      display: none;
+    }
+    &__fly2 {
+      display: none;
+    }
+  }
 }
 .grid-sizer {
   width: 33.33%;
+  @media (max-width: $break_sm) {
+    width: 50%;
+  }
 }
