@@ -45,6 +45,7 @@
     margin-left: $offset-sm * -1;
     margin-right: $offset-sm * -1;
     position: relative;
+    z-index: 2;
     &__img {
       width: 66px;
       height: 66px;

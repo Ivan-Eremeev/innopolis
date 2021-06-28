@@ -1729,7 +1729,8 @@ h4 {
       padding: 83px 20px 44px 20px;
       margin-left: -20px;
       margin-right: -20px;
-      position: relative; }
+      position: relative;
+      z-index: 2; }
       .optionally__img {
         width: 66px;
         height: 66px;
